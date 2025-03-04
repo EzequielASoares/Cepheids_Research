@@ -4,11 +4,13 @@
 ## 📄 About this repository  
 This repository is dedicated to organizing and analyzing scientific papers on **Cepheid variable stars**, focusing on their classification, the Period-Luminosity relation, and reproducibility of results.  
 
-## 📌 Projeto de Pesquisa
+## 📌 Research Project  
 
-Este trabalho faz parte do **Titan (Time de Astrofísica e Exoplanetologia)**, coordenado pelo **Leonardo Andrade de Almeida**. Para mais informações, consulte o [Currículo Lattes do Coordenador](http://lattes.cnpq.br/7812463045514059).
+This work is part of **Titan (Astrophysics and Exoplanetology Team)**, coordinated by **Leonardo Andrade de Almeida**.  
+For more information, check the [Lattes profile of the coordinator](http://lattes.cnpq.br/7812463045514059).  
 
-🔗 Projeto baseado no trabalho desenvolvido por **Gabriel Wendell**, integrante de mestrado do **TITAN**, com sua colaboração direta. Confira o repositório dele: [Gabriel Wendell](https://github.com/GabrielWendell/Cepheids_Projects).
+🔗 This project is based on research developed by **Gabriel Wendell**, a master's student in the **TITAN** group, with his direct collaboration.  
+Check out his repository: [Gabriel Wendell](https://github.com/GabrielWendell/Cepheids_Projects).  
 
 ## 📚 Structure of the repository  
 
