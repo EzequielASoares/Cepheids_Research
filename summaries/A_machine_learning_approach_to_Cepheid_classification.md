@@ -85,6 +85,11 @@ Os experimentos avaliaram a **precisão da classificação** em duas bandas:
 ✔️ **Banda Visível (V)**  
 ✔️ **Banda Infravermelha (I)**  
 
+Os experimentos utilizaram **dados observacionais de duas fontes principais**:  
+✔️ **OGLE-III (Optical Gravitational Lensing Experiment)** → Fonte de treinamento (**LMC**).  
+✔️ **M33 Synoptic Stellar Survey** → Fonte de teste (**M33**).   
+
+
 ### **📌 Comparação de Precisão (%)**
 | Método | Sem correção | Deslocamento fixo | Passo 1 (Verossimilhança) | Passo 2 (Refinamento) |
 |--------|------------|----------------|-------------------|----------------|
@@ -107,6 +112,7 @@ Os experimentos avaliaram a **precisão da classificação** em duas bandas:
 ✅ O método utiliza conceitos estatísticos bem estabelecidos.  
 ✅ Não exige novas rotulações manuais, reduzindo o custo da classificação.  
 ✅ Pode ser aplicado a outras áreas com problemas similares de deslocamento de dados.  
+✅ **Utiliza dados do OGLE-III, um banco de dados que o coordenador usa (Leonardo Almeida), facilitando a reprodutibilidade.**
 
 ### **❌ Pontos Negativos**
 ❌ Depende de uma boa modelagem da distribuição inicial.  
