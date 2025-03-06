@@ -41,7 +41,7 @@ Onde:
 - **\(P\)** → Período de oscilação.  
 - **\(a, b\)** → Parâmetros da relação Período-Luminosidade.  
 
-A **magnitude aparente** (\(m\)) de uma estrela é dada por:  
+A **magnitude aparente** ($m$) de uma estrela é dada por:
 
 $$
 m = -2.5 \cdot \log_{10} \left(\frac{L}{d^2}\right)
@@ -55,28 +55,28 @@ Onde **\(d\)** é a distância até a estrela. Assim, **quanto menor o valor de 
 A abordagem do artigo envolve **duas etapas principais**:  
 
 ### **📌 1. Ajuste da Magnitude por Máxima Verossimilhança**
-O primeiro passo é encontrar um **deslocamento \( \delta \)** na magnitude aparente para alinhar os dados da M33 aos da LMC.  
+O primeiro passo é encontrar um **deslocamento** $\delta$ na magnitude aparente para alinhar os dados da M33 aos da LMC.  
 
 $$
 x'_2 = x_2 + \delta
 $$
 
-O deslocamento \( \delta \) é encontrado **maximizando a verossimilhança** dos dados da M33 em relação à distribuição das Cefeidas na LMC:  
+O deslocamento $\delta$ é encontrado **maximizando a verossimilhança** dos dados da M33 em relação à distribuição das Cefeidas na LMC:  
 
 $$
 L(\delta | T_{te}') = \sum_{k=1}^{q} \log P_{tr}(x_k)
 $$
 
-Aqui, **\(P_{tr}(x)\)** representa a distribuição de probabilidade das Cefeidas na LMC, assumida como uma **mistura de duas distribuições Gaussianas**:  
+Aqui, **$P_{tr}(x)$** representa a distribuição de probabilidade das Cefeidas na LMC, assumida como uma **mistura de duas distribuições Gaussianas**:  
 
 $$
 P_{tr}(x_1, x_2) = \sum_{i=1}^{2} \phi_i \frac{1}{2\pi\sigma_{i1}\sigma_{i2} \sqrt{1 - \rho_i^2}} \exp\left(-\frac{v_i}{2(1 - \rho_i^2)}\right)
 $$
 
-Onde os parâmetros **\( \mu_i, \sigma_i, \phi_i \)** são ajustados pelos dados da LMC.  
+Onde os parâmetros **$\mu_i, \sigma_i, \phi_i$** são ajustados pelos dados da LMC.
 
 ### **📌 2. Refinamento do Ajuste Baseado na Proporção das Classes**
-Após encontrar \( \delta \), ajustamos iterativamente sua magnitude até que a proporção das classes prevista no conjunto de teste **coincida com a distribuição original da LMC**. Isso é feito aplicando **bootstrap** para estimar a proporção esperada das classes.  
+Após encontrar $\delta$, ajustamos iterativamente sua magnitude até que a proporção das classes prevista no conjunto de teste **coincida com a distribuição original da LMC**. Isso é feito aplicando **bootstrap** para estimar a proporção esperada das classes.  
 
 ---
 
