@@ -1,5 +1,5 @@
 # 📌 A Machine Learning Approach to Cepheid Variable Star Classification
-**Resumo detalhado do artigo: Aplicação de aprendizado de máquina para classificar Cefeidas usando alinhamento de dados e máxima verossimilhança.**  
+**Resumo detalhado do artigo: a machine learning approach to cepheid variable stars classification using data alignment and maximum likelihood.**  
 
 ---
 
