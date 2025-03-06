@@ -13,16 +13,14 @@ This work is part of **Titan (Astrophysics and Exoplanetology Team)**, coordinat
 ## 📚 Structure of the repository  
 
 📁 **papers/** → Contains PDFs of the scientific articles read.  
-📁 **summaries/** → Summaries of each article, chapter by chapter.  
-📁 **evaluations/** → Analysis of reproducibility:  
+📁 **summaries/** → Summaries of each article, chapter by chapter and analysis of reproducibility.  
 - ✔️ Key points from the study.  
 - ✔️ Positive aspects of reproducing the research.  
 - ✔️ Challenges and limitations in reproducing the study.  
 
 ## 🛠️ How to Use  
 - Navigate to the **papers/** folder to access the original articles.  
-- Check **summaries/** for structured summaries of each chapter.  
-- Explore **evaluations/** to understand the feasibility and challenges of reproducing each study.  
+- Check **summaries/** for structured summaries of each chapter, along with an evaluation of the feasibility and challenges of reproducing each study.  
 
 ## 📌 Goals of this repository  
 ✔️ Organize the scientific literature on Cepheid variable stars.  
