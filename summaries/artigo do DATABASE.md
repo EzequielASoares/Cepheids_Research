@@ -80,5 +80,83 @@ Principais diferenças:
 
 ---
 
+# Glossário de Conceitos Astronômicos
+
+## 1. WISE e Spitzer (Telescópios de Infravermelho)
+
+### WISE (Wide-field Infrared Survey Explorer)
+- **O que é**: Telescópio espacial da NASA lançado em 2009
+- **Banda W1**: 3.4 µm (micrômetros) - infravermelho próximo
+- **Banda W2**: 4.6 µm
+- **Banda W3**: 12 µm
+- **Banda W4**: 22 µm
+- **Função**: Mapeamento completo do céu em infravermelho
+
+### Spitzer Space Telescope
+- **O que é**: Telescópio espacial da NASA (2003-2020)
+- **Banda I1**: 3.6 µm
+- **Banda I2**: 4.5 µm
+- **Banda I3**: 5.8 µm
+- **Banda I4**: 8.0 µm
+- **Vantagem**: Maior sensibilidade que WISE para objetos fracos
+
+```python
+# Exemplo: Filtros usados no artigo
+bands = {
+    'WISE': ['W1', 'W2', 'W3', 'W4'],
+    'Spitzer': ['I1', 'I2', 'I3', 'I4']
+}
+```
+
+## 2. Aλ (Extinção Interestelar)
+- **Definição**: Quantidade de luz absorvida pela poeira interestelar
+- **Unidade**: Magnitudes (mag)
+- **Como calcular**:
+  ```math
+  A_\lambda = R_\lambda \cdot A_{K_s}
+  ```
+  Onde:
+  - `R_λ`: Razão de extinção específica para cada banda
+  - `A_{K_s}`: Extinção na banda Ks (2.2 µm)
+
+| Banda | Comprimento de onda | R_λ típico |
+|-------|---------------------|------------|
+| W1    | 3.4 µm              | 0.591      |
+| I1    | 3.6 µm              | 0.553      |
+
+## 3. Posição na Galáxia (l, b, d)
+
+### Sistema de Coordenadas Galácticas
+- **l (Longitude galáctica)**: 0° a 360°, medido no plano galáctico
+  - 0° = Direção do centro galáctico
+  - 90° = Direção da rotação galáctica
+- **b (Latitude galáctica)**: -90° a +90°
+  - 0° = Plano galáctico
+  - ±90° = Polos galácticos
+- **d (Distância)**: Em parsecs (pc) do Sol
+
+### Exemplo Visual
+```
+        ^ b (Galactic North)
+        |
+        |   • Objeto (l=30°, b=15°, d=2kpc)
+        |
+Sun •---+--------------------------> l (Galactic Plane)
+        |
+        |
+```
+
+### Por que usar (l,b,d)?
+1. **l,b**: Natural para estudos da estrutura galáctica
+2. **d**: Permite reconstrução 3D
+3. **Vantagem**: Elimina efeito de perspectiva solar
+
+## Fluxo de Cálculo
+
+1. **WISE/Spitzer** → mede → **magnitude aparente (m_λ)**
+2. **Posição (l,b,d)** → alimenta → **Mapa de poeira 3D**
+3. **Mapa de poeira** → calcula → **extinção (A_λ)**
+4. **m_λ + A_λ + PL** → calcula → **distância final (d_λ)**
+
 **Referência**:  
 Skowron et al. (2019). *Science* 365(6452), 478-482. [DOI:10.1126/science.aau3181](https://doi.org/10.1126/science.aau3181)
